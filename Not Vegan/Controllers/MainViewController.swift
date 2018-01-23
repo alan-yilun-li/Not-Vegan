@@ -11,6 +11,13 @@ import UIKit
 class MainViewController: UIViewController {
 
     @IBOutlet weak var searchField: UITextField!
+    
+    var searchText: String {
+        get {
+            return searchField.text ?? ""
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,9 +30,7 @@ class MainViewController: UIViewController {
 
     @IBAction func searchButtonPressed(_ sender: Any) {
         
-        
-        
-        
+        SearchManager.shared.search(for: searchText)
     }
     
 }

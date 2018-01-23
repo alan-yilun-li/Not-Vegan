@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4C3BB8DC1948A330110DCCAD /* Pods_Not_Vegan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7C8D0684CEF04E3534E3DB /* Pods_Not_Vegan.framework */; };
+		E72433432016DC4C0056EB92 /* SearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72433422016DC4C0056EB92 /* SearchManager.swift */; };
+		E77678D82016E4A400941327 /* StringParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77678D72016E4A400941327 /* StringParser.swift */; };
 		E7AC2F3C2016D50300C65C58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AC2F3B2016D50300C65C58 /* AppDelegate.swift */; };
 		E7AC2F3E2016D50300C65C58 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AC2F3D2016D50300C65C58 /* MainViewController.swift */; };
 		E7AC2F412016D50300C65C58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7AC2F3F2016D50300C65C58 /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 		2A7C8D0684CEF04E3534E3DB /* Pods_Not_Vegan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Not_Vegan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E3315AEEA6CF228F19021F2 /* Pods-Not Vegan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Not Vegan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Not Vegan/Pods-Not Vegan.debug.xcconfig"; sourceTree = "<group>"; };
 		349B80E68A8510954ECF9D2C /* Pods-Not Vegan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Not Vegan.release.xcconfig"; path = "Pods/Target Support Files/Pods-Not Vegan/Pods-Not Vegan.release.xcconfig"; sourceTree = "<group>"; };
+		E72433422016DC4C0056EB92 /* SearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchManager.swift; sourceTree = "<group>"; };
+		E77678D72016E4A400941327 /* StringParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringParser.swift; sourceTree = "<group>"; };
 		E7AC2F382016D50300C65C58 /* Not Vegan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Not Vegan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7AC2F3B2016D50300C65C58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7AC2F3D2016D50300C65C58 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E77678D62016E48A00941327 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				E77678D72016E4A400941327 /* StringParser.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 		E7AC2F2F2016D50300C65C58 = {
 			isa = PBXGroup;
 			children = (
@@ -85,13 +97,14 @@
 		E7AC2F3A2016D50300C65C58 /* Not Vegan */ = {
 			isa = PBXGroup;
 			children = (
+				E7AC2F472016D50400C65C58 /* Info.plist */,
 				E7AC2F572016D69500C65C58 /* Views */,
 				E7AC2F562016D68D00C65C58 /* Models */,
 				E7AC2F552016D68200C65C58 /* Controllers */,
 				E7AC2F532016D67500C65C58 /* Networking */,
 				E7AC2F3B2016D50300C65C58 /* AppDelegate.swift */,
+				E77678D62016E48A00941327 /* Support */,
 				E7AC2F422016D50300C65C58 /* Assets.xcassets */,
-				E7AC2F472016D50400C65C58 /* Info.plist */,
 			);
 			path = "Not Vegan";
 			sourceTree = "<group>";
@@ -100,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				E7AC2F542016D67D00C65C58 /* Secrets */,
+				E72433422016DC4C0056EB92 /* SearchManager.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -285,6 +299,8 @@
 			files = (
 				E7AC2F3E2016D50300C65C58 /* MainViewController.swift in Sources */,
 				E7AC2F5B2016D73B00C65C58 /* Colours.swift in Sources */,
+				E72433432016DC4C0056EB92 /* SearchManager.swift in Sources */,
+				E77678D82016E4A400941327 /* StringParser.swift in Sources */,
 				E7AC2F5D2016D77600C65C58 /* APIKeys.swift in Sources */,
 				E7AC2F3C2016D50300C65C58 /* AppDelegate.swift in Sources */,
 			);
@@ -360,7 +376,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -411,7 +427,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
