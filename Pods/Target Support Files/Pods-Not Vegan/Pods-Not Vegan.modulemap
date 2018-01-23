@@ -1,0 +1,6 @@
+framework module Pods_Not_Vegan {
+  umbrella header "Pods-Not Vegan-umbrella.h"
+
+  export *
+  module * { export * }
+}

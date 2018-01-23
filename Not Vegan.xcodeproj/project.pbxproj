@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C3BB8DC1948A330110DCCAD /* Pods_Not_Vegan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7C8D0684CEF04E3534E3DB /* Pods_Not_Vegan.framework */; };
 		E7AC2F3C2016D50300C65C58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AC2F3B2016D50300C65C58 /* AppDelegate.swift */; };
-		E7AC2F3E2016D50300C65C58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AC2F3D2016D50300C65C58 /* ViewController.swift */; };
+		E7AC2F3E2016D50300C65C58 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AC2F3D2016D50300C65C58 /* MainViewController.swift */; };
 		E7AC2F412016D50300C65C58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7AC2F3F2016D50300C65C58 /* Main.storyboard */; };
 		E7AC2F432016D50300C65C58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7AC2F422016D50300C65C58 /* Assets.xcassets */; };
 		E7AC2F462016D50400C65C58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7AC2F442016D50400C65C58 /* LaunchScreen.storyboard */; };
+		E7AC2F522016D66800C65C58 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E7AC2F512016D66800C65C58 /* .gitignore */; };
+		E7AC2F5B2016D73B00C65C58 /* Colours.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AC2F5A2016D73B00C65C58 /* Colours.swift */; };
+		E7AC2F5D2016D77600C65C58 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AC2F5C2016D77600C65C58 /* APIKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A7C8D0684CEF04E3534E3DB /* Pods_Not_Vegan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Not_Vegan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E3315AEEA6CF228F19021F2 /* Pods-Not Vegan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Not Vegan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Not Vegan/Pods-Not Vegan.debug.xcconfig"; sourceTree = "<group>"; };
+		349B80E68A8510954ECF9D2C /* Pods-Not Vegan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Not Vegan.release.xcconfig"; path = "Pods/Target Support Files/Pods-Not Vegan/Pods-Not Vegan.release.xcconfig"; sourceTree = "<group>"; };
 		E7AC2F382016D50300C65C58 /* Not Vegan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Not Vegan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7AC2F3B2016D50300C65C58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E7AC2F3D2016D50300C65C58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E7AC2F3D2016D50300C65C58 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E7AC2F402016D50300C65C58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E7AC2F422016D50300C65C58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7AC2F452016D50400C65C58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7AC2F472016D50400C65C58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7AC2F512016D66800C65C58 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = "Not Vegan/.gitignore"; sourceTree = "<group>"; };
+		E7AC2F5A2016D73B00C65C58 /* Colours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colours.swift; sourceTree = "<group>"; };
+		E7AC2F5C2016D77600C65C58 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C3BB8DC1948A330110DCCAD /* Pods_Not_Vegan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D1609056C9D896BE5BD3329 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E3315AEEA6CF228F19021F2 /* Pods-Not Vegan.debug.xcconfig */,
+				349B80E68A8510954ECF9D2C /* Pods-Not Vegan.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		448F0252BC2362C1175B5C36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A7C8D0684CEF04E3534E3DB /* Pods_Not_Vegan.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E7AC2F2F2016D50300C65C58 = {
 			isa = PBXGroup;
 			children = (
+				E7AC2F512016D66800C65C58 /* .gitignore */,
 				E7AC2F3A2016D50300C65C58 /* Not Vegan */,
 				E7AC2F392016D50300C65C58 /* Products */,
+				2D1609056C9D896BE5BD3329 /* Pods */,
+				448F0252BC2362C1175B5C36 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +85,72 @@
 		E7AC2F3A2016D50300C65C58 /* Not Vegan */ = {
 			isa = PBXGroup;
 			children = (
+				E7AC2F572016D69500C65C58 /* Views */,
+				E7AC2F562016D68D00C65C58 /* Models */,
+				E7AC2F552016D68200C65C58 /* Controllers */,
+				E7AC2F532016D67500C65C58 /* Networking */,
 				E7AC2F3B2016D50300C65C58 /* AppDelegate.swift */,
-				E7AC2F3D2016D50300C65C58 /* ViewController.swift */,
-				E7AC2F3F2016D50300C65C58 /* Main.storyboard */,
 				E7AC2F422016D50300C65C58 /* Assets.xcassets */,
-				E7AC2F442016D50400C65C58 /* LaunchScreen.storyboard */,
 				E7AC2F472016D50400C65C58 /* Info.plist */,
 			);
 			path = "Not Vegan";
+			sourceTree = "<group>";
+		};
+		E7AC2F532016D67500C65C58 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E7AC2F542016D67D00C65C58 /* Secrets */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E7AC2F542016D67D00C65C58 /* Secrets */ = {
+			isa = PBXGroup;
+			children = (
+				E7AC2F5C2016D77600C65C58 /* APIKeys.swift */,
+			);
+			path = Secrets;
+			sourceTree = "<group>";
+		};
+		E7AC2F552016D68200C65C58 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E7AC2F3D2016D50300C65C58 /* MainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E7AC2F562016D68D00C65C58 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E7AC2F572016D69500C65C58 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E7AC2F592016D71E00C65C58 /* Graphics */,
+				E7AC2F582016D6DF00C65C58 /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E7AC2F582016D6DF00C65C58 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E7AC2F3F2016D50300C65C58 /* Main.storyboard */,
+				E7AC2F442016D50400C65C58 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E7AC2F592016D71E00C65C58 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				E7AC2F5A2016D73B00C65C58 /* Colours.swift */,
+			);
+			path = Graphics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +160,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E7AC2F4A2016D50400C65C58 /* Build configuration list for PBXNativeTarget "Not Vegan" */;
 			buildPhases = (
+				E3BD41328A7A82BD3C5A6FEA /* [CP] Check Pods Manifest.lock */,
 				E7AC2F342016D50300C65C58 /* Sources */,
 				E7AC2F352016D50300C65C58 /* Frameworks */,
 				E7AC2F362016D50300C65C58 /* Resources */,
+				970D48B3947876AADFCC8EF2 /* [CP] Embed Pods Frameworks */,
+				5370CCA28653BD5784C808AF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,6 +215,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7AC2F522016D66800C65C58 /* .gitignore in Resources */,
 				E7AC2F462016D50400C65C58 /* LaunchScreen.storyboard in Resources */,
 				E7AC2F432016D50300C65C58 /* Assets.xcassets in Resources */,
 				E7AC2F412016D50300C65C58 /* Main.storyboard in Resources */,
@@ -131,12 +224,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5370CCA28653BD5784C808AF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Not Vegan/Pods-Not Vegan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		970D48B3947876AADFCC8EF2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Not Vegan/Pods-Not Vegan-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Not Vegan/Pods-Not Vegan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3BD41328A7A82BD3C5A6FEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Not Vegan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E7AC2F342016D50300C65C58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7AC2F3E2016D50300C65C58 /* ViewController.swift in Sources */,
+				E7AC2F3E2016D50300C65C58 /* MainViewController.swift in Sources */,
+				E7AC2F5B2016D73B00C65C58 /* Colours.swift in Sources */,
+				E7AC2F5D2016D77600C65C58 /* APIKeys.swift in Sources */,
 				E7AC2F3C2016D50300C65C58 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +421,7 @@
 		};
 		E7AC2F4B2016D50400C65C58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E3315AEEA6CF228F19021F2 /* Pods-Not Vegan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +437,7 @@
 		};
 		E7AC2F4C2016D50400C65C58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 349B80E68A8510954ECF9D2C /* Pods-Not Vegan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
